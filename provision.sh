@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # simple provision for Python ready Vagrant box with Ubuntu 14
 
-hostname python-enviroment
+hostname vagrant-python-env
 
 echo ""
 echo "apt-get update"
