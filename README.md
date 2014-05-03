@@ -10,7 +10,9 @@ Simple Python dev enviroment Vagrant box - Python 3.4 + Ubuntu 14
 
 #Get started
 
-    $ curl -L https://raw.githubusercontent.com/adionditsak/vagrant-python-env/master/init.sh | bash
+From your command-line run:
+
+    curl -L https://raw.githubusercontent.com/adionditsak/vagrant-python-env/master/init.sh | bash
     
 This will create a vagrant-python-env/ dir. Change directory into it. Download the Vagrantfile + provision.sh files, and start your new box up.
 
