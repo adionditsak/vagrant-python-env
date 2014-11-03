@@ -36,7 +36,6 @@ pip install virtualenvwrapper
 echo ""
 echo ".vimrc"
 echo ""
-
 cat <<EOF >> ~/.vimrc
 set smartindent
 set tabstop=2
