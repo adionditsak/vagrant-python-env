@@ -32,3 +32,17 @@ easy_install pip
 easy_install ipython
 pip install virtualenv
 pip install virtualenvwrapper
+
+echo ""
+echo ".vimrc"
+echo ""
+
+cat <<EOF >> ~/.vimrc
+set smartindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set number
+syntax on
+colorscheme pablo
+EOF
