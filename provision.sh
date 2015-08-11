@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# simple provision for Python ready Vagrant box with Ubuntu 14
+# simple provision for Python3 ready Vagrant box with Ubuntu 14
 
 hostname vagrant-python-env
 
@@ -18,7 +18,7 @@ apt-get install -y libreadline-dev
 echo ""
 echo "Python utils"
 echo ""
-apt-get install -y python3 python-setuptools python-dev libpq-dev pep8
+apt-get install -y python3 python3-setuptools python3-dev libpq-dev pep8
 
 echo ""
 echo "apt-get cleanup"
@@ -28,10 +28,9 @@ apt-get clean
 echo ""
 echo "pip, ipython and virtualenv"
 echo ""
-easy_install pip3
-easy_install ipython
-pip install virtualenv
-pip install virtualenvwrapper
+apt-get install -y python3-pip ipython3
+pip3 install virtualenv
+pip3 install virtualenvwrapper
 
 echo ""
 echo ".vimrc"
