@@ -28,7 +28,7 @@ apt-get clean
 echo ""
 echo "pip, ipython and virtualenv"
 echo ""
-easy_install pip
+easy_install pip3
 easy_install ipython
 pip install virtualenv
 pip install virtualenvwrapper
@@ -45,3 +45,5 @@ set number
 syntax on
 colorscheme pablo
 EOF
+
+reboot
