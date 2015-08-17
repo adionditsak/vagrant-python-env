@@ -45,4 +45,9 @@ syntax on
 colorscheme pablo
 EOF
 
+echo ""
+echo "Disabling firewall"
+echo ""
+sudo ufw disable
+
 reboot
