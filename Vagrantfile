@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
   config.vm.box_url = "http://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box"
 
   # To forward ports
-  # config.vm.network "forwarded_port", guest: 80, host: 8001
+  config.vm.network "forwarded_port", guest: 8000, host: 8000
   
   # To define private network:
   # config.vm.network :private_network, ip: "192.168.33.10"
@@ -22,6 +22,4 @@ Vagrant.configure("2") do |config|
   # Provision for Python 
   config.vm.provision :shell, :path => "provision.sh"
   
-  config.vm.network "forwarded_port", guest: 8080, host: 8080
-
 end
